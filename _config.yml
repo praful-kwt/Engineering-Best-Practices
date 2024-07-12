@@ -1,13 +1,13 @@
-name:          10up Engineering Best Practices
-title:         10up Engineering Best Practices
-description:   Engineering best practices used by 10up.
-url:           https://10up.github.io/
+name:          KrishaWeb Engineering Best Practices
+title:         KrishaWeb Engineering Best Practices
+description:   Engineering best practices used by KrishaWeb.
+url:           https://praful-kwt.github.io/
 baseurl:       /Engineering-Best-Practices
 author:
-  name:    10up
-  email:   sales@10up.com
-  github:  10up
-  twitter: 10up
+  name:    KrishaWeb
+  email:   sales@KrishaWeb.com
+  github:  KrishaWeb
+  twitter: KrishaWeb
 
 markdown:      kramdown
 permalink:     pretty

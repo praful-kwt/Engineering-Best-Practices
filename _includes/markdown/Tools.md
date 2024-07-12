@@ -1,20 +1,20 @@
-The following are tools we use at 10up. This list is not comprehensive and will grow and change over time. Generally, we encourage engineers to use these tools in favor of others. Rules governing tools to be used and packaged with a client site will be much stricter than those used on internal projects.
+The following are tools we use at KrishaWeb. This list is not comprehensive and will grow and change over time. Generally, we encourage engineers to use these tools in favor of others. Rules governing tools to be used and packaged with a client site will be much stricter than those used on internal projects.
 
 <h2 id="local-development" class="anchor-heading">Local Development Environments {% include Util/link_anchor anchor="local-development" %} {% include Util/top %}</h2>
 
-At 10up, we use [Local WP](https://localwp.com/) to build and interact with local environments. Local WP makes it easy to spin up, manage, and interact with local WordPress environments. It's available for Mac, Windows, and Linux.
+At KrishaWeb, we use [Local WP](https://localwp.com/) to build and interact with local environments. Local WP makes it easy to spin up, manage, and interact with local WordPress environments. It's available for Mac, Windows, and Linux.
 
-Local WP replaces Docker and WP Local Docker as the recommended development environment at 10up.
+Local WP replaces Docker and WP Local Docker as the recommended development environment at KrishaWeb.
 
 <h2 id="scaffolding" class="anchor-heading">Scaffolding {% include Util/link_anchor anchor="scaffolding" %} {% include Util/top %}</h2>
 
-[10up WP Scaffold](https://github.com/10up/wp-scaffold) - Developers can use 10up Project Scaffold to quickly create themes and plugins with our recommended tools and many of our best practices already in place.
+[KrishaWeb WP Scaffold](https://github.com/KrishaWeb/wp-scaffold) - Developers can use KrishaWeb Project Scaffold to quickly create themes and plugins with our recommended tools and many of our best practices already in place.
 
 <h2 id="task-runners" class="anchor-heading">Task Runners {% include Util/link_anchor anchor="task-runners" %} {% include Util/top %}</h2>
 
-[10up-toolkit](https://github.com/10up/10up-toolkit/blob/develop/packages/toolkit/README.md) - 10up Toolkit is 10up’s official asset bundling tool based on Webpack 5. It comes with support for most everyday requirements within 10up projects.
+[KrishaWeb-toolkit](https://github.com/KrishaWeb/KrishaWeb-toolkit/blob/develop/packages/toolkit/README.md) - KrishaWeb Toolkit is KrishaWeb’s official asset bundling tool based on Webpack 5. It comes with support for most everyday requirements within KrishaWeb projects.
 
-[Webpack](https://webpack.github.io/) - Webpack is a bundler for JS/CSS. It’s beneficial when 10up Toolkit can’t handle a project’s requirements.
+[Webpack](https://webpack.github.io/) - Webpack is a bundler for JS/CSS. It’s beneficial when KrishaWeb Toolkit can’t handle a project’s requirements.
 
 <h2 id="package-managers" class="anchor-heading">Package/Dependency Managers {% include Util/link_anchor anchor="package-managers" %} {% include Util/top %}</h2>
 
@@ -24,7 +24,7 @@ The [WordPress Packagist](https://wpackagist.org/) repository mirrors all public
 
 <h2 id="version-control" class="anchor-heading">Version Control {% include Util/link_anchor anchor="version-control" %} {% include Util/top %}</h2>
 
-[Git](https://git-scm.com) - At 10up we use Git for version control. We encourage people to use the command line for interacting with Git. GUIs are permitted but will not be supported internally.
+[Git](https://git-scm.com) - At KrishaWeb we use Git for version control. We encourage people to use the command line for interacting with Git. GUIs are permitted but will not be supported internally.
 
 <h2 id="command-line" class="anchor-heading">Command Line Tools {% include Util/link_anchor anchor="command-line" %} {% include Util/top %}</h2>
 

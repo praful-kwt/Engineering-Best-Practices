@@ -1,13 +1,13 @@
 <h2 id="performance-culture" class="anchor-heading">Performance Culture {% include Util/link_anchor anchor="performance-culture" %} {% include Util/top %}</h2>
 
-At 10up, we understand that website performance is essential for a positive User Experience, Engineering, SEO, Revenue, and Design. It's not a task that can be postponed but rather a continuous and evolving process that requires strategic planning, thoughtful consideration, and extensive experience in creating high-quality websites.
+At KrishaWeb, we understand that website performance is essential for a positive User Experience, Engineering, SEO, Revenue, and Design. It's not a task that can be postponed but rather a continuous and evolving process that requires strategic planning, thoughtful consideration, and extensive experience in creating high-quality websites.
 
-10up engineers prioritize performance optimization when building solutions, using the latest best practices to ensure consistent and healthy performance metrics. We aim to develop innovative and dynamic solutions to reduce latency, bandwidth, and page load time.
+KrishaWeb engineers prioritize performance optimization when building solutions, using the latest best practices to ensure consistent and healthy performance metrics. We aim to develop innovative and dynamic solutions to reduce latency, bandwidth, and page load time.
 
 
 <h2 id="core-web-vitals" class="anchor-heading">Core Web Vitals {% include Util/link_anchor anchor="core-web-vitals" %} {% include Util/top %}</h2>
 
-At 10up, we pay close attention to Largest Contentful Paint, Cumulative Layout Shift, and First Input Delay. Collectively, these three metrics are known as Core Web Vitals.
+At KrishaWeb, we pay close attention to Largest Contentful Paint, Cumulative Layout Shift, and First Input Delay. Collectively, these three metrics are known as Core Web Vitals.
 
 We closely monitor Core Web Vitals during development to ensure a high-quality user experience. Maintaining healthy Web Vitals throughout the build and maintenance process is crucial, which requires a shift in building and supporting components. Achieving healthy Web Vitals requires a cross-disciplinary approach spanning Front-end engineering, Back-end engineering, Systems, Audience and Revenue, and Visual design.
 
@@ -33,7 +33,7 @@ Many platforms, such as [WordPress](https://wordpress.org/) and [NextJS](https:/
 
 ```html
 <img
-  alt="10up.com Logo"
+  alt="KrishaWeb.com Logo"
   height="90px"
   srcset="ten-up-logo-480w.jpg 480w, ten-up-logo-800w.jpg 800w"
   sizes="(max-width: 600px) 480px,
@@ -69,7 +69,7 @@ The "[decoding](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElemen
 ```html
 /* Above the Fold */
 <img
-  alt="10up.com Logo"
+  alt="KrishaWeb.com Logo"
   decoding="sync"
   loading="eager"
   height="90px"
@@ -79,7 +79,7 @@ The "[decoding](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElemen
 
 /* Below the Fold */
 <img
-  alt="10up.com Logo"
+  alt="KrishaWeb.com Logo"
   decoding="async"
   loading="lazy"
   height="90px"
@@ -97,7 +97,7 @@ We can set a [fetch priority](https://addyosmani.com/blog/fetch-priority/) on th
 
 ```html
 <img
-  alt="10up.com Logo"
+  alt="KrishaWeb.com Logo"
   decoding="async"
   loading="eager"
   fetchpriority="high"
@@ -118,7 +118,7 @@ This can also cause the [Properly size images](https://developer.chrome.com/en/d
 
 ```html
 <img
-  alt="10up.com Logo"
+  alt="KrishaWeb.com Logo"
   height="90px"
   src="ten-up-logo-800w.jpg"
   width="160px"
@@ -148,7 +148,7 @@ Recently, this methodology has received a fair amount of attention; there are al
 2. [Lite Vimeo Embed](https://github.com/luwes/lite-vimeo-embed)
 3. [Intercom Chat Facade](https://github.com/danielbachhuber/intercom-facade/)
 
-Follow [these instructions](https://gutenberg.10up.com/guides/modifying-the-markup-of-a-core-block/#youtube-embed-facade) to modify the core block output to support the facade pattern.
+Follow [these instructions](https://gutenberg.KrishaWeb.com/guides/modifying-the-markup-of-a-core-block/#youtube-embed-facade) to modify the core block output to support the facade pattern.
 
 You can use the [script-loader snippet](https://gist.github.com/itsjavi/93cc837dd2213ec0636a) (outdated) to create a more general Facade mechanism. This snippet uses promises and can load necessary scripts when the user interacts with the user interface.
 
@@ -210,7 +210,7 @@ _JavaScript files tend to be large and can block other resources from loading, s
 
 <h4>3.1 Minify and compress payloads</h4>
 
-To make your JavaScript code load faster and prevent it from blocking the rendering of your web page, it's important to minimize and compress the JavaScript payloads to reduce bandwidth usage. 10up Toolkit does this out-of-the-box using Webpack.
+To make your JavaScript code load faster and prevent it from blocking the rendering of your web page, it's important to minimize and compress the JavaScript payloads to reduce bandwidth usage. KrishaWeb Toolkit does this out-of-the-box using Webpack.
 
 Files should also be [Gzip](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding) or [Brotli](https://github.com/google/brotli) compressed. All major hosts already do this.
 
@@ -223,7 +223,7 @@ To provide an optimal user experience, it's crucial only to load critical JavaSc
 Several approaches, outlined in sections 3.3 (Remove unused JavaScript code) and 3.4 (Leverage Code Splitting), can help achieve this. 
 As an engineer, it's essential to determine what JavaScript is critical versus non-critical for each project. Generally, any JavaScript related to above-the-fold functionality is considered critical, but this may vary depending on the project.
 
-The [script_loader_tag](https://developer.wordpress.org/reference/hooks/script_loader_tag/) filter allows you to extend [wp_enqueue_script](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) to apply async or defer attributes on rendered script tags. This functionality can be found in [10up/wp-scaffold](https://github.com/10up/wp-scaffold/blob/trunk/themes/10up-theme/includes/core.php#L273).
+The [script_loader_tag](https://developer.wordpress.org/reference/hooks/script_loader_tag/) filter allows you to extend [wp_enqueue_script](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) to apply async or defer attributes on rendered script tags. This functionality can be found in [KrishaWeb/wp-scaffold](https://github.com/KrishaWeb/wp-scaffold/blob/trunk/themes/KrishaWeb-theme/includes/core.php#L273).
 
 
 <h4>3.3 Remove unused JavaScript code</h4>
@@ -271,7 +271,7 @@ _Large and complex CSS files can slow page load times and affect interactivity. 
 
 [Minifying CSS](https://web.dev/minify-css/) is a common practice that reduces data transfer between the server and browser. Since modern web pages have a lot of CSS, compressing them is crucial to reduce bandwidth consumption. 
 
-Use build tools like [Webpack](https://webpack.js.org/) or CDNs with query string parameters to minify CSS. Smaller CSS files can speed up download times and reduce render-blocking activity in the browser. [10up Toolkit](https://github.com/10up/10up-toolkit) does all this out of the box.
+Use build tools like [Webpack](https://webpack.js.org/) or CDNs with query string parameters to minify CSS. Smaller CSS files can speed up download times and reduce render-blocking activity in the browser. [KrishaWeb Toolkit](https://github.com/KrishaWeb/KrishaWeb-toolkit) does all this out of the box.
 
 <h4>4.2 Leverage Purge CSS</h4>
 
@@ -295,7 +295,7 @@ This results in smaller CSS files, but it may not work for dynamic class name va
 >
 <noscript><link rel="stylesheet" href="styles.css"></noscript>
 ```
-If you would like to identify and debug render-blocking CSS and JS you can toggle on [ct.css](https://csswizardry.com/ct/) in [10up/wp-scaffold](https://github.com/10up/wp-scaffold). By appending `?debug_perf=1` to any URL in your theme, all render-blocking assets in the head will be highlighted on the screen.
+If you would like to identify and debug render-blocking CSS and JS you can toggle on [ct.css](https://csswizardry.com/ct/) in [KrishaWeb/wp-scaffold](https://github.com/KrishaWeb/wp-scaffold). By appending `?debug_perf=1` to any URL in your theme, all render-blocking assets in the head will be highlighted on the screen.
 
 <h4>4.4 Adhere to CSS Best Practices</h4>
 
@@ -461,7 +461,7 @@ Achieving the lowest possible TTFB value is essential to ensure that the client-
 - the use of a CDN (Content Delivery Network), 
 - and the number of redirects.
 
-It's highly advisable to leverage a strategic caching strategy in order to optimize Time to First Byte. Suggested caching strategies are documented in the [PHP Performance Best Practices](https://10up.github.io/Engineering-Best-Practices/php/#performance).  
+It's highly advisable to leverage a strategic caching strategy in order to optimize Time to First Byte. Suggested caching strategies are documented in the [PHP Performance Best Practices](https://praful-kwt.github.io/Engineering-Best-Practices/php/#performance).  
 
 You can read more about [Optimizing TTFB](https://web.dev/optimize-ttfb/) on [web.dev](https://web.dev/).
 
